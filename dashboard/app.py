@@ -30,7 +30,7 @@ PROJECT_DIR / "energydata_complete.xlsx",
 
 data_file = next((file for file in possible_files if file.exists()), None)
 
-Allow Excel upload if the file is not found in the repository
+#Allow Excel upload if the file is not found in the repository
 
 if data_file is not None:
 try:
