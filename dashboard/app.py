@@ -39,6 +39,9 @@ st.success(f"Excel dataset loaded: {data_file.name}")
 except Exception as error:
 st.error(f"Unable to read the Excel file: {error}")
 st.stop()
+except Exception as error:
+st.error(f"Unable to read the Excel file: {error}")
+st.stop()
 else:
 st.warning("Excel file not found in the dataset folder.")
 uploaded_file = st.file_uploader(
