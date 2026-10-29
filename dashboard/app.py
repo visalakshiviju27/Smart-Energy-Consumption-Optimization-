@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 from pathlib import Path
 
----------------- PAGE CONFIGURATION ----------------
+#---------------- PAGE CONFIGURATION ----------------
 
 st.set_page_config(
 page_title="Smart Energy Dashboard",
@@ -17,7 +17,7 @@ st.caption(
 "and explore potential energy-saving opportunities."
 )
 
----------------- LOAD EXCEL DATASET ----------------
+#---------------- LOAD EXCEL DATASET ----------------
 
 PROJECT_DIR = Path(file).resolve().parent.parent
 
