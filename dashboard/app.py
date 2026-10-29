@@ -4,7 +4,7 @@ import plotly.express as px
 from pathlib import Path
 from io import BytesIO
 
-PAGE CONFIGURATION
+#PAGE CONFIGURATION
 
 st.set_page_config(
 page_title="Smart Energy Dashboard",
