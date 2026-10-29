@@ -56,12 +56,16 @@ try:
         else:
             df = pd.read_excel(uploaded_file)
     else:
-                 file_path = Path(__file__).resolve().parent / "dataset" / "cleaned_dataset.xlsx"
+        file_path = (
+            Path(__file__).resolve().parent
+            / "dataset"
+            / "cleaned_dataset.xlsx"
+        )
 
         if not file_path.exists():
             st.error(
                 "cleaned_dataset.xlsx not found. "
-                "Place it in the dataset folder or upload it using the sidebar."
+                "Check the dataset folder and file name."
             )
             st.stop()
 
